@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<header th:insert="blogs/header ::header"></header>
+
+<div class="container mt-5 mb-5" >
+
+
+    <h1>Додати продукт</h1><br>
+    <form action="/add" method="posts">
+        <input type="text" name="name" placeholder="Введіть назву продукту " class="form-control"><br>
+        <input type="text" name="characteristics" placeholder="Введіть характеристики продуктк " class="form-control"><br>
+        <input type="text" name="description" placeholder="Введіть опис продукткту " class="form-control"><br>
+        <div class="form-inline ">
+            <input type="text"   name="price" placeholder="Вкажіть ціну: " class="form-control mx-1.5"><br>
+        </div><br>
+        <h3>Додайте фото: </h3>
+          <div>
+              <a href="/" name="add_photo" >
+                <svg   class="bi bi-card-image" width="5em" height="5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                    <path d="M10.648 7.646a.5.5 0 0 1 .577-.093L15.002 9.5V13h-14v-1l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71z"/>
+                    <path fill-rule="evenodd" d="M4.502 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                </svg>
+            </a>
+          </div>
+        <button type="submit" class="mt-5 btn btn-success">Додати статтю</button>
+    </form>
+</div>
+<div th:insert="blogs/footer ::footer"></div>
+
+</body>
+</html>

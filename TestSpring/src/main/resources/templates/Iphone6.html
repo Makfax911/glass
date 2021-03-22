@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- подключение css-файла -->
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"-->
+<!--          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">-->
+
+
+    <!-- подключение нужной версии jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+
+    <!-- подключение popper.js, необходимого для корректной работы некоторых плагинов Bootstrap 4 -->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"-->
+<!--            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">-->
+<!--    </script>-->
+
+    <!-- подключение js-файла -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
+    </script>
+<!--    <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet" />-->
+<!--    <link th:rel="stylesheet" type="text/css" th:href="@{/css.css/main.css}"  >-->
+    <script type="text/javascript" th:src ="@{/js/script_number.js}"></script>
+    <link th:href="@{/styles/css/main.css}" rel="stylesheet" />
+
+</head>
+
+
+</head>
+<body>
+<header th:insert="blogs/header ::header"></header>
+
+<div class="row featurette container mt-5">
+    <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading font-weight-bold">Захисне 2.5D скло для Iphone 6/6s </h2>
+        <div class="text-left text-success">
+            <p >
+            <svg class="bi bi-check-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3-3a.5.5 0 11.708-.708L8 9.293l6.646-6.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd" d="M8 2.5A5.5 5.5 0 1013.5 8a.5.5 0 011 0 6.5 6.5 0 11-3.25-5.63.5.5 0 11-.5.865A5.472 5.472 0 008 2.5z" clip-rule="evenodd"/>
+            </svg>
+               <a  >Є в наявності</a>
+            </p>
+        </div>
+        <div>
+            <h3>
+                <p class="  container mt-2 text-right ">Ціна 40 грн</p>
+            </h3>
+<!--            <div>-->
+<!--                <svg aria-hidden="true" class="product-delivery__icon" height="24" width="24"><use xlink:href="#icon-delivery-nova"></use></svg>-->
+<!--            </div>-->
+            <h4>
+                <p class="  container mt-5 ">Колір</p>
+            </h4>
+            <div class="col-md-7 font-weight-bold">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        Прозоре
+                    </label>
+                </div>
+                <div class="form-check" disabled>
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" disabled>
+                        Біле
+                    </label>
+                </div>
+                <div class="form-check disabled">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                        Чорне
+                    </label>
+                </div>
+            </div>
+<!--            <div>-->
+<!--                <h4>-->
+<!--                    <p class="  container mt-5 ">Доставка по Україні</p>-->
+<!--                </h4>-->
+<!--                <div class="col-md-7 font-weight-bold">-->
+<!--                    <div class="form-check">-->
+<!--                        <label class="form-check-label">-->
+<!--                            <input class="form-check-input" type="radio" name="exampleRadios" id="delivery1" value="option1" checked>-->
+<!--                            Нова пошта-->
+<!--                        </label>-->
+<!--                    </div>-->
+<!--                    <div class="form-check" >-->
+<!--                        <label class="form-check-label">-->
+<!--                            <input class="form-check-input" type="radio" name="exampleRadios" id="delivery2" value="option2" checked>-->
+<!--                            у-->
+<!--                        </label>-->
+<!--                    </div>-->
+<!--            </div>-->
+
+            <!--            редагувати -->
+            <div class="=container mt-5" style="width:250 px">
+                <input type="number"value="1" min="1"max="100" step="1"/>
+            </div>
+            <!--            редагувати -->
+
+
+                <div class="col-md-20 order-md-4 container mt-10">
+
+                    <button  type="button" class="btn btn-primary rounded float-md-right   ">Купити</button>
+                    <a href="/basket">
+                    <button  type="button" class="btn btn-primary rounded float-md-right mr-4 " >У Кошик</button>
+                    </a>
+                </div>
+        </div>
+        <div>
+        </div>
+    </div>
+
+<!--    <div class="col-md-5 order-md-1">-->
+<!--        <img th:src="@{/images/big.jpg}" class="rounded float-right"  style="width:90%" />-->
+
+<!--    </div>-->
+    <div id="carouselExampleIndicators" class="carousel slide col-md-5 order-md-1" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" >
+            <div class="carousel-item active">
+                <img  th:src="@{/images/big.jpg}" alt="First slide" class="rounded float-right"  style="width:90%">
+            </div>
+            <div class="carousel-item">
+                <img  th:src="@{/images/big6.jpg}" alt="Second slide" class="rounded float-right"  style="width:90%">
+            </div>
+            <div class="carousel-item">
+                <img  th:src="@{/images/big3.jpg}" alt="Third slide" class="rounded float-right"  style="width:90%">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<div class="container marketing mt-5">
+
+    <!-- Three columns of text below the carousel -->
+
+    <div class="row text-center">
+        <div class="col-lg-4">
+            <h2>Характеристики </h2>
+            <p><a  href="#line1"  role="button"><h4>Більше »</h4></a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+
+          <h2>Опис</h2>
+            <p><a   href="#line2" role="button"><h4>Більше »</h4></a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+
+           <h2>Відгуки</h2>
+            <p><a   href="#line3" role="button"><h4>Більше »</h4></a></p>
+        </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr id="line1" class="featurette-divider mt-5">
+
+   <h  id="characteristics" class="row featurette mt-5 mb-5">
+        <div  class="col-md-7">
+            <h2 class="featurette-heading">Характеристики </h2>
+            <p class="lead">Donec ullamcorper  <strong nulla non metus auctor></strong> fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div  class="col-md-5 order-md-1 mt-5">
+            <img th:src="@{/images/big5.jpg}" class="rounded float-right"  style="width:90%" />
+        </div>
+    </h>
+
+    <hr id="line2" class="featurette-divider">
+
+
+        <div id="description" class="row featurette mt-5 mb-5">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Опис </h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img th:src="@{/images/big3.jpg}" class="rounded float-right"  style="width:90%" />
+            </div>
+        </div>
+
+    <hr class="featurette-divider">
+
+    <div id="reviews" class="row featurette mt-5 mb-5">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Відгуки </h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img th:src="@{/images/big6.jpg}" class="rounded float-right"  style="width:90%" />
+        </div>
+    </div>
+
+    <hr id="line3" class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+    <div class="form-outline mb-4 mt-5">
+        <textarea class="form-control" id="form4Example3" rows="4" placeholder="Чекаєм на ваші відгуки"></textarea>
+        <label class="form-label" for="form4Example3" style="margin-left: 0px;">  </label>
+        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div>
+            <div class="form-notch-middle" style="width: 60px;"></div>
+            <div class="form-notch-trailing"></div>
+            <button id="#" type="button" class="btn btn-primary rounded float-md-right   ">Відправити </button>
+        </div>
+    </div>
+</div>
+
+<div th:insert="blogs/footer ::footer"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<!--    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"-->
+<!--            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">-->
+<!--    </script>-->
+    <!-- подключение js-файла -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
+    </script>
+    <!--    <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet" />-->
+    <!--    <link th:rel="stylesheet" type="text/css" th:href="@{/css.css/main.css}"  >-->
+    <script type="text/javascript" th:src ="@{/js/script_number.js}"></script>
+    <link th:href="@{/styles/css/main.css}" rel="stylesheet" />
+</head>
+<body>
+
+
+
+<header th:insert="blogs/header ::header"></header>
+<main role="main" class="  container center " >
+<h1 class="featurette-heading font-weight-bold rounded pl-5 pt-3 "  > Кошик </h1>
+
+    <div class="jumbotron ">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="">
+                        <img th:src="@{/images/big5.jpg}" class="rounded float-left pr-5  "  style="width:20%" />
+                        <a class="" ><h4>Захисне 2.5D скло для Iphone 6/6s</h4></a>
+                        <div class ="rounded float-left">
+                            <h5>
+                                <p class="  container mt-2 ">Колір </p>
+                            </h5>
+                            <div class="col-md-7 font-weight-bold">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        Прозоре
+                                    </label>
+                                </div>
+                                <div class="form-check" disabled>
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" disabled>
+                                        Біле
+                                    </label>
+                                </div>
+                                <div class="form-check disabled">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                                        Чорне
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="container pl-2" >
+                                <h5>
+                                <p class="container pl-2 mt-3 ">  Кількість</p>
+                                </h5>
+                                <div class="rounded float-center pl-5  mt-5" style="width:250 px">
+                                    <input   type="number" id="test1" value="1" min="1"max="100" step="1"/>
+                                </div>
+                            </div>
+                        <div class="float-right pt-5"id="test2">
+                            <h5> 40 ₴</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rounded float-right pr-5 ">
+        <a href="#">
+            <button onclick="demo()" type="button"  class="btn btn-primary " >Оформити замовлення</button>
+        </a>
+    </div>
+    <div   >
+        First name: <input id="first_name">
+        Last name: <input id="last_name">
+        <button id="say_hi">Say hi!</button>
+    </div>
+
+
+</main>
+
+
+<div th:insert="blogs/footer ::footer"></div>
+<!--<script>-->
+<!--    /* Зміна для інпута */-->
+<!--    let input = document.querySelector('#test1');-->
+<!--    /*  */-->
+
+<!--    /* Значення позамовченню для інпута */-->
+<!--    input.value = 0;-->
+<!--    /*  */-->
+<!--    /* Зміна для обрахунку числа */-->
+<!--    let min = 40;-->
+<!--    /*  */-->
+
+<!--    /* Функція для обробки події по в воду числа в інпупт */-->
+<!--    input.oninput = function() {-->
+<!--        /* Звертаємось до ійді елемента в яких хочимо помістити число з обрахунків */-->
+<!--        document.querySelector("#test2").innerHTML = min * input.value;-->
+<!--        /*  */-->
+<!--    };-->
+<!--</script>-->
+</body>
+</html>
